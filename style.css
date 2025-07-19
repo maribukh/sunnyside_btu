@@ -1,0 +1,67 @@
+:root {
+    --blue: #24303E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+
+body {
+    max-width: 1440px;
+    font-family: 'Barlow';
+}
+
+header {
+    background-image: url(./assets/images/1_bg-header-blue.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100vh;
+}
+
+header .container {
+    width: 93.88%;
+    margin: auto;
+}
+
+header .container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0rem;
+}
+
+header .container .top nav {
+    width: 34.54%;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    color: white;
+}
+
+header .container .top nav ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    list-style: none;
+}
+
+header .container .top nav ul li button {
+    padding: 16px 31px;
+
+    font-family: 'Fraunces';
+    font-weight: bold;
+    font-size: 15px;
+
+}

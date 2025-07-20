@@ -118,10 +118,14 @@ header .middle img {
     margin: auto
 }
 
+
+
 main .about {
+    object-fit: cover;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 main .about .content {
@@ -198,7 +202,7 @@ main .about .content-2 .text {
     bottom: 3.75rem;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 47%;
+
 
 }
 

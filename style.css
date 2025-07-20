@@ -1,6 +1,14 @@
 :root {
     --white: #ffffff;
+    --black: #000000;
     --blue: #24303E;
+    --grey: #808397;
+    --text-grey: #5B636D;
+    --yellow: #FAD400;
+    --pink: #FE7766;
+    --dark-green: #24554A;
+    --dark-blue: #19536C;
+
 }
 
 * {
@@ -8,6 +16,17 @@
     padding: 0;
     box-sizing: border-box;
     /* border: 1px solid red; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -23,9 +42,7 @@ header {
     max-height: 100vh;
 
     background-image: url(./assets/images/1_bg-header-blue.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 header .container {
@@ -100,11 +117,192 @@ header .middle img {
     margin: auto
 }
 
+main .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .about .content {
+    width: 50%;
+    padding: 10.31rem 9.5rem 9.5rem 6.87rem;
+}
+
+main .about .content h3 {
+    font-size: 2.5rem;
+    font-family: 'Fraunces';
+}
+
+main .about .content p {
+    width: 100%;
+
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.13px;
+    line-height: 30px;
+
+    color: var(--grey);
+}
+
+main .about .content .decor {
+    width: fit-content;
+    position: relative;
+}
+
+main .about .content .decor a {
+    font-family: 'Fraunces';
+    font-weight: bold;
+    z-index: 0;
+}
+
+main .about .content .decor .line {
+    position: absolute;
+    left: -0.7rem;
+    top: 0.8rem;
+
+    width: 8.56rem;
+    height: 0.625rem;
+
+    border-radius: 1.75rem;
 
 
+    opacity: 25%;
+    z-index: -1;
+}
+
+main .about .content .decor .line-1 {
+    background-color: var(--yellow);
+
+}
+
+main .about .content .decor .line-2 {
+    background-color: var(--pink);
+}
+
+main .about .content-2 {
+    position: relative;
+    width: 50%;
+    min-height: 600px;
 
 
+    text-align: center;
+}
 
+main .about .content-2 .text {
+    position: absolute;
+    margin: auto;
+    bottom: 3.75rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 47%;
+
+}
+
+main .about .content-2 h4 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    font-family: 'Fraunces';
+}
+
+main .about .content-2 p {
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: -0.11px;
+
+    margin-top: 1.69rem;
+}
+
+main .about .img-1 {
+    background-image: url(./assets/images/4_green.svg);
+    color: var(--dark-green);
+}
+
+main .about .img-2 {
+    background-image: url(./assets/images/5_blue.svg);
+    color: var(--dark-blue);
+}
+
+main .reviwes {
+    padding: 10rem 0rem;
+}
+
+main .reviwes h1 {
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Fraunces';
+
+    color: var(--grey);
+    text-align: center;
+}
+
+main .reviwes .cards-container {
+    width: 77.08%;
+    margin: auto;
+    margin-top: 5.06rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .reviwes .cards-container .card {
+    width: 31.53%;
+
+    text-align: center;
+}
+
+main .reviwes .cards-container .card p {
+    margin-top: 3.625rem;
+    margin-bottom: 4.31rem;
+
+    font-size: 1.125rem;
+    font-weight: 600;
+
+    line-height: 30px;
+    letter-spacing: -0.13px;
+
+    color: var(--text-grey);
+}
+
+main .reviwes .cards-container .card h2 {
+    margin-bottom: 0.56rem;
+
+    font-size: 1.125rem;
+    font-weight: bold;
+    font-family: 'Fraunces';
+    color: var(--blue);
+
+}
+
+main .reviwes .cards-container .card h5 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #A7AAAD;
+}
+
+
+main .reviwes .cards-container .card .profile {
+    width: 4.6rem;
+    height: 4.6rem;
+    margin: auto;
+    border-radius: 50%;
+}
+
+main .reviwes .cards-container .card .profile-1 {
+    background-image: url(./assets/images/profiles/1_profile.svg);
+}
+
+main .reviwes .cards-container .card .profile-2 {
+    background-image: url(./assets/images/profiles/2_profile.svg);
+}
+
+main .reviwes .cards-container .card .profile-3 {
+    background-image: url(./assets/images/profiles/3_profile.svg);
+}
 
 /* hovers */
 header .container .top .logo,

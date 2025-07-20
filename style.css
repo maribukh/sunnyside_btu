@@ -15,12 +15,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 a {
     text-decoration: none;
     color: var(--blue);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bg-img {
@@ -31,8 +37,7 @@ a {
 
 
 body {
-    /* min-width: 1440px; */
-
+    min-width: 1440px;
     font-family: 'Barlow';
 }
 
@@ -41,7 +46,7 @@ header {
     min-height: 800px;
     max-height: 100vh;
 
-    background-image: url(./assets/images/1_bg-header-blue.svg);
+    background-image: url(./assets/images/background/1_bg-header-blue.svg);
 
 }
 
@@ -74,11 +79,6 @@ header .container .top nav {
 header .container .top nav ul {
     width: 100%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    list-style: none;
 }
 
 header .container .top nav ul li button {
@@ -216,12 +216,12 @@ main .about .content-2 p {
 }
 
 main .about .img-1 {
-    background-image: url(./assets/images/4_green.svg);
+    background-image: url(./assets/images/background/4_green.svg);
     color: var(--dark-green);
 }
 
 main .about .img-2 {
-    background-image: url(./assets/images/5_blue.svg);
+    background-image: url(./assets/images/background/5_blue.svg);
     color: var(--dark-blue);
 }
 
@@ -302,6 +302,38 @@ main .reviwes .cards-container .card .profile-2 {
 
 main .reviwes .cards-container .card .profile-3 {
     background-image: url(./assets/images/profiles/3_profile.svg);
+}
+
+footer .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer .info {
+    background-color: #90D4C6;
+    text-align: center;
+    padding: 4.5rem 0rem;
+}
+
+footer .info ul {
+    width: 20.62%;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 5.5rem;
+
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    color: #458D7E;
+}
+
+footer .info .social-media {
+    width: 11.39%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* hovers */

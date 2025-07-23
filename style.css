@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 a {
@@ -133,6 +134,7 @@ main .about .content {
     padding: 10.31rem 9.5rem 9.5rem 6.87rem;
 }
 
+
 main .about .content h3 {
     font-size: 2.5rem;
     font-family: 'Fraunces';
@@ -250,18 +252,18 @@ main .reviwes .cards-container {
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
 }
 
 main .reviwes .cards-container .card {
-    width: 31.53%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     text-align: center;
 }
 
 main .reviwes .cards-container .card p {
-    margin-top: 3.625rem;
+    width: 350px;
     margin-bottom: 4.31rem;
 
     font-size: 1.125rem;
@@ -269,6 +271,7 @@ main .reviwes .cards-container .card p {
 
     line-height: 30px;
     letter-spacing: -0.13px;
+
 
     color: var(--text-grey);
 }
@@ -294,6 +297,7 @@ main .reviwes .cards-container .card .profile {
     width: 4.6rem;
     height: 4.6rem;
     margin: auto;
+    margin-bottom: 58px;
     border-radius: 50%;
 }
 
@@ -350,6 +354,21 @@ header .container .top nav ul li:hover {
 header .container .top nav ul li button:hover {
     cursor: pointer;
     transition: 0.1s ease-out;
-    background-color: var(--blue);
+    background: rgba(255, 255, 255, 25.37%);
+    ;
     color: var(--white);
+}
+
+.line-1:hover {
+    background: rgba(250, 212, 0, 1);
+}
+
+.line-2 {
+    background: rgba(254, 119, 102, 1);
+}
+
+footer .info li:hover,
+.social-media img:hover {
+    color: var(--white);
+    cursor: pointer;
 }

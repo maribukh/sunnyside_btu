@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+
 }
 
 a {
@@ -131,9 +131,20 @@ main .about {
 
 main .about .content {
     width: 50%;
-    padding: 10.31rem 9.5rem 9.5rem 6.87rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-right: 9.5rem;
+    padding-left: 6.87rem;
 }
 
+main .about img {
+    width: 100%;
+    max-width: 720px;
+    height: 600px;
+    object-fit: contain;
+}
 
 main .about .content h3 {
     font-size: 2.5rem;
@@ -319,6 +330,10 @@ footer .top {
     align-items: center;
 }
 
+footer .top img {
+    width: 360px;
+}
+
 footer .info {
     background-color: #90D4C6;
     text-align: center;
@@ -359,12 +374,15 @@ header .container .top nav ul li button:hover {
     color: var(--white);
 }
 
-.line-1:hover {
-    background: rgba(250, 212, 0, 1);
+main .about .content .decor .line-1:hover {
+    background-color: rgba(250, 212, 0, 1) !important;
+    opacity: 100% !important;
+    cursor: pointer;
 }
 
-.line-2 {
-    background: rgba(254, 119, 102, 1);
+.line-2:hover {
+    background-color: rgba(254, 119, 102, 1) !important;
+    cursor: pointer;
 }
 
 footer .info li:hover,

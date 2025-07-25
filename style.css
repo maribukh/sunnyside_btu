@@ -38,8 +38,6 @@ ul {
 
 
 body {
-    /* width: 100%;
-    max-width: 1440px; */
     font-family: 'Barlow';
 }
 
@@ -135,6 +133,10 @@ main .about .content {
     justify-content: center;
     flex-direction: column;
 
+
+}
+
+main .about .content .text {
     padding-right: 9.5rem;
     padding-left: 6.87rem;
 }

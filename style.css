@@ -15,7 +15,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 
 }
 
@@ -48,8 +47,7 @@ ul {
 
     header {
         width: 100%;
-        min-height: 800px;
-        max-height: 100vh;
+        min-height: 100vh;
 
         background-image: url(./assets/images/background/1_bg-header-blue.svg);
 
@@ -427,8 +425,7 @@ ul {
 
     header {
         width: 100%;
-        min-height: 800px;
-        max-height: 100vh;
+        min-height: 100vh;
 
         background-image: url(./assets/images/background/1_bg-header-blue.svg);
 
@@ -446,11 +443,6 @@ ul {
 
         padding: 1rem 0rem;
     }
-
-    /* 
-    header .container .top img {
-        width: 100%;
-    } */
 
     header .container .top nav {
         width: 34.54%;
@@ -799,7 +791,23 @@ ul {
 
 }
 
-@media only screen and (min-width:375px) {
+
+
+@media only screen and (max-width:375px) {
+    header {
+        height: 538px !important;
+    }
+
+    header .container {
+        display: block;
+        width: 327px;
+    }
+
+    header .middle h1 {
+        font-size: 31px;
+        margin-top: 88px;
+        margin-bottom: 52px;
+    }
 
     header nav ul {
         display: none;
@@ -811,11 +819,136 @@ ul {
         display: block;
     }
 
+    main .about,
+    main .reviwes,
+    main .cards-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .about-col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    main .about .right {
+        width: 100%;
+    }
+
+    main .about img {
+        width: 100%;
+        height: 312px;
+    }
+
+    main .about .content {
+        padding: 64px 0px;
+
+    }
+
+    main .about .content .text {
+        width: 327px;
+        text-align: center;
+    }
+
+    main .about .content .decor {
+        margin: auto;
+    }
+
+    main .about .right,
+    main .about .content {
+        width: 100%;
+    }
+
+    main .about .content h3 {
+        font-size: 2rem;
+        color: var(--blue);
+
+    }
+
+    main .about .content p {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 2rem
+    }
+
+    main .about .content-2 {
+        width: 100%;
+    }
+
+    main .reviwes {
+        padding: 64px 0rem;
+    }
+
+    main .cards-container {
+        margin-top: 64px;
+        margin-bottom: 86px;
+        gap: 64px;
+    }
+
+    main .reviwes .cards-container .card .profile {
+        margin-bottom: 2rem;
+    }
+
+    main .reviwes .cards-container .card p {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    footer .top {
+        display: none;
+    }
+
+
+
+    footer .mobile-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .mobile-top img {
+        width: 188px;
+        height: 188px;
+        object-fit: cover
+    }
+
+    footer .mobile-top .box {
+        display: flex;
+        width: 100%;
+    }
+
+    footer .info ul {
+        width: 79.2%;
+    }
+
+    footer .info .social-media {
+        width: 43.73%;
+    }
+
 }
 
 @media only screen and (min-width: 1920px) {
     main .about img {
         width: 954px;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    main .about .img-1,
+    main .about .img-2 {
+        height: 100vh;
+    }
+
+    footer {
+        height: 100vh;
+    }
+
+    footer .top img {
+        width: 480px;
+    }
+}
+
+@media only screen and (min-width: 1720px) {
+    main .about img {
+        width: 854px;
         height: 600px;
         object-fit: cover;
     }

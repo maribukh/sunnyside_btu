@@ -146,6 +146,17 @@ ul {
 
     }
 
+    main .about .right,
+    main .about .left {
+        width: 50%;
+    }
+
+    main .about .right img,
+    main .about .left img {
+        width: 100%;
+    }
+
+
     main .about .content .text {
         width: 445px;
     }
@@ -534,10 +545,14 @@ ul {
         padding-right: 9.5rem;
     }
 
-    main .about img {
-        width: 595px;
-        height: 500px;
-        object-fit: cover;
+    main .about .right,
+    main .about .left {
+        width: 50%;
+    }
+
+    main .about .right img,
+    main .about .left img {
+        width: 100%;
     }
 
     main .about .content h3 {
@@ -819,6 +834,10 @@ ul {
         display: block;
     }
 
+    header .middle-dec {
+        display: none;
+    }
+
     main .about,
     main .reviwes,
     main .cards-container {
@@ -891,6 +910,11 @@ ul {
     main .reviwes .cards-container .card p {
         width: 100%;
         margin-bottom: 2rem;
+    }
+
+    main .about .right,
+    main .about .left {
+        width: 100%;
     }
 
     footer .top {

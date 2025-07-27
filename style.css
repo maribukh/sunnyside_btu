@@ -806,7 +806,76 @@ ul {
 
 }
 
+@media only screen and (max-width:800px) {
+    header .container .top nav {
+        display: none;
+    }
 
+    header .menu {
+        display: block;
+    }
+
+    header .middle h1 {
+        margin: 3rem 0rem;
+    }
+
+    main .about .content h3 {
+        font-size: 2rem;
+        color: var(--blue);
+    }
+
+    main .about .content .text {
+        width: 310px;
+    }
+
+    main .about .content p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    main .reviwes {
+        padding: 2rem 0rem;
+    }
+
+    main .reviwes .cards-container {
+        flex-wrap: wrap;
+    }
+
+    main .reviwes .cards-container .card {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    main .reviwes .cards-container .card p {
+        width: 100%;
+    }
+
+    footer .top {
+        flex-wrap: wrap;
+    }
+
+    footer .top img {
+        width: 200px;
+    }
+
+    footer .info ul {
+        width: 50%;
+    }
+
+    footer .info .social-media {
+        width: 25%;
+    }
+
+    footer .info {
+        padding: 2rem 0rem;
+    }
+
+    main .about .content {
+        width: 50%;
+    }
+}
 
 @media only screen and (max-width:375px) {
     header {

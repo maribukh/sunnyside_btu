@@ -877,6 +877,52 @@ ul {
     }
 }
 
+@media only screen and (max-width:475px) {
+
+    main .about,
+    main .reviwes,
+    main .about .content-2,
+    main .cards-container {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
+    main .about .content,
+    main .about .right,
+    main .about .left {
+        width: 100%;
+    }
+
+    header .middle h1 {
+        font-size: 31px;
+        margin-top: 88px;
+        margin-bottom: 52px;
+    }
+
+    .about-col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    main .about .content .text {
+        width: 327px;
+        text-align: center;
+        padding: 64px 0px;
+    }
+
+    footer .top {
+        justify-content: center;
+    }
+
+    footer .top img {
+        width: 237px;
+    }
+
+    .decor {
+        margin: auto;
+    }
+}
+
 @media only screen and (max-width:375px) {
     header {
         height: 538px !important;
